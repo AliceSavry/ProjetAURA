@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Le projet AURA : un escape game pour réviser les coûts complets. Traversez cinq salles, résolvez les énigmes et ouvrez la porte de votre école.">
+<meta name="theme-color" content="#0c1220"><title>Le projet AURA — Escape game des coûts complets</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au jeu</a>
+<div class="environment" aria-hidden="true"><img id="environment-image" src="./assets/ecole.webp" alt="" fetchpriority="high"></div><div class="location-badge" aria-hidden="true">Vous êtes ici<span id="location-name">Le centre de formation</span></div>
+<div class="container"><header><a href="#" id="brand" class="brand" aria-label="Le projet AURA, accueil"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 3 33 30H3L18 3Z" stroke="#c5f58b" stroke-width="2"/><path d="m18 13 8 14H10l8-14Z" fill="#c5f58b"/></svg><div><div class="wordmark">AURA</div><span class="tag">Le projet</span></div></a><div class="header-right"><span class="status" id="global-status"><i class="dot"></i>École verrouillée</span><button class="text-button" id="restart" hidden>Recommencer</button></div></header>
+<main id="main" tabindex="-1"></main>
+<footer><span>Un jeu créé par Alice Savry · Adaptation HTML</span><span>BTS GPME · Les coûts complets</span></footer></div>
+<dialog id="restart-dialog" aria-labelledby="dialog-title"><h2 id="dialog-title">Recommencer la mission ?</h2><p>Les salles et les indices de cette partie seront effacés sur cet appareil.</p><div class="dialog-actions"><button class="secondary" id="cancel-restart">Continuer</button><button class="primary" id="confirm-restart">Recommencer</button></div></dialog>
+<script src="./config.js"></script>
+<script src="./game.js"></script>
+</body>
+</html>
